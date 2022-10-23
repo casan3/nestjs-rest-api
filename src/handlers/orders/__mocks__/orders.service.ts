@@ -1,5 +1,5 @@
-export function OrdersService () {
-    return {
-        getOrders: jest.fn(() => [])
-    }
+export function OrdersService() {
+  return {
+    getOrders: jest.fn(() => []),
+  };
 }
