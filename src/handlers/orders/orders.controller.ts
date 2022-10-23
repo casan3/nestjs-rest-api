@@ -1,4 +1,4 @@
-import { Controller, Get, Post, Body, Put, Param, Delete, ParseIntPipe } from '@nestjs/common';
+import { Controller, Get, Post, Body /* Put, Param, Delete, ParseIntPipe */ } from '@nestjs/common';
 import { OrdersService } from './orders.service';
 
 import { SkipAuth } from '../../guards/skip-auth.decorator';

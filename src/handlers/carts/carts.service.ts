@@ -21,6 +21,7 @@ export class CartsService {
   }
 
   create(createCartDto: CreateCartDto) {
+    console.log(createCartDto);
     return 'This action adds a new cart';
   }
 
@@ -33,6 +34,7 @@ export class CartsService {
   }
 
   update(id: number, updateCartDto: UpdateCartDto) {
+    console.log(updateCartDto);
     return `This action updates a #${id} cart`;
   }
 

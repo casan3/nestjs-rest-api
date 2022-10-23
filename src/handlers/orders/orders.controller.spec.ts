@@ -1,5 +1,5 @@
 import { Test, TestingModule } from '@nestjs/testing';
-import { array } from 'yargs';
+/* import { array } from 'yargs'; */
 import { OrdersController } from './orders.controller';
 import { OrdersService } from './orders.service';
 
@@ -7,7 +7,7 @@ jest.mock('./orders.service');
 
 describe('OrdersController', () => {
   let ordersController: OrdersController;
-  let ordersService: OrdersService;
+  /* let ordersService: OrdersService; */
 
   beforeEach(async () => {
     const app: TestingModule = await Test.createTestingModule({
@@ -16,7 +16,7 @@ describe('OrdersController', () => {
     }).compile();
 
     ordersController = app.get<OrdersController>(OrdersController);
-    ordersService = app.get<OrdersService>(OrdersService);
+    /* ordersService = app.get<OrdersService>(OrdersService); */
   });
 
   describe('Orders controller', () => {
