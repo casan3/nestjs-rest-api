@@ -3,11 +3,5 @@
 
 npm test
 npm audit
-docker run \
-    --rm \
-    -e SONAR_HOST_URL="http://host.docker.internal:9000" \
-    -e SONAR_SCANNER_OPTS="-Dsonar.projectKey=nest-rest-api" \
-    -e SONAR_LOGIN="sqp_3c57dae43d5a402016e9409ad77aae4f2576e002" \
-    -v "/projects/EPAM/Courses/devops-fundamentals-labs/lab_3/nestjs-rest-api:/usr/src" \
-    sonarsource/sonar-scanner-cli
+npm run static:local
 
